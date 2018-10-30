@@ -1,4 +1,13 @@
 #!/bin/bash
 
 echo "hello itc-136"
-ech "edited in github"
+
+echo "edited in github"
+echo "these are your logged user"
+who
+echo " this is working dir"
+pwd
+echo "this are your user"
+uname -a
+
+
