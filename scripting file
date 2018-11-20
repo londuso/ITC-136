@@ -1,23 +1,32 @@
-du -h   how much disk space has been used
-free -h how much memory is free
-df -h \grep "* |grep "|sda* |awk '{print}' 
+#!bin/bash
 
-echo $ diskused
+diskused=$( free -h| grep  "/dev\sda1" |awk '{print $5}K '{print $5}
+
+memfree=$(free -mh | grep Mem: | awk '{print $7}
+
+connections=$ netstat | grep tcp )
+
+users=$(who |awk '{print $1}' )
+
+ech -en "This is a snapshot of your current system"
+              
+              
+              
+              \e[36m    Disk used: $diskused
+              \e[95m    Free memory:$memfree
+              \e[31m     logged in Users: users
+              
+              
+              
+              
+              
+              \e[46m
+              open internet Connections:
+              $connections
+              
+              
+              \e[49m
+              
+              "
 
 
-
-netstat | grep tcp   //  How many connections to the machinw
-
-users =$( who )
-
-echo "this  is is a snapshot of your current system
-
-disk used: $ diskused
-Free Memory : $memfree
-logged in Users: $users
-
-memFree=(free mh | grep mem : |awk '{ print$7}')
-
-echo$ memFree
-
-bash stats
