@@ -12,6 +12,10 @@ users =$( who )
 
 echo "this  is is a snapshot of your current system
 
+disk used: $ diskused
+Free Memory : $memfree
+logged in Users: $users
+
 memFree=(free mh | grep mem : |awk '{ print$7}')
 
 echo$ memFree
