@@ -1,0 +1,14 @@
+du -h   how much disk space has been used
+free -h how much memory is free
+df -h \grep "* |grep "|sda* |awk '{print}' 
+
+echo $ diskused
+
+
+
+netstat | grep tcp   //  How many connections to the machinw
+
+users =$( who )
+
+echo "this  is is a snapshot of your current system
+
