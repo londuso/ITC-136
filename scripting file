@@ -1,14 +1,14 @@
 #!bin/bash
 
-diskused=$( free -h| grep  "/dev\sda1" |awk '{print $5}K '{print $5}
+diskused=$(df -h| grep  "/dev/sda1" |awk '{print $5}K '{print $5}
 
 memfree=$(free -mh | grep Mem: | awk '{print $7}
 
 connections=$ netstat | grep tcp )
 
-users=$(who |awk '{print $1}' )
+users=$( who |awk '{print $1}' )
 
-ech -en "This is a snapshot of your current system"
+echo -en  "This is a snapshot of your current system"
               
               
               
