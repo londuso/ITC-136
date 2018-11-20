@@ -14,13 +14,9 @@ ech -en "This is a snapshot of your current system"
               
               \e[36m    Disk used: $diskused
               \e[95m    Free memory:$memfree
-              \e[31m     logged in Users: users
-              
-              
-              
-              
-              
+              \e[31m     logged in Users:$ users     
               \e[46m
+              
               open internet Connections:
               $connections
               
