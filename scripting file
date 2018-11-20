@@ -12,3 +12,8 @@ users =$( who )
 
 echo "this  is is a snapshot of your current system
 
+memFree=(free mh | grep mem : |awk '{ print$7}')
+
+echo$ memFree
+
+bash stats
